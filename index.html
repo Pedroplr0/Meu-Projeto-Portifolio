@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pedro Lima - Portfólio Front-End</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="nav-item">
+          <a href="#sobre" class="nav-link">Sobre</a>
+        </li>
+        <li>
+          <a href="https://wa.me/5551994011777" target="_blank" rel="noreferrer">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="student-logo" href="https://www.devclub.com.br/" target="_blank" aria-label="Acessar site da DevClub">
+      <img src="./dev_club_devs_logo.jfif" alt="Logo da DevClub">
+    </a>
+  </header>
+
+  <main id="home">
+    <section class="hero-section">
+      <div class="fundo-img">
+        <img class="img" src="./mascara.desktop.jpeg" alt="Minha foto de perfil profissional">
+        <div class="mascara"></div>
+      </div>
+      <div class="hero-content">
+        <h1>Programador Front-End</h1>
+    
+        <figure>
+          <img class="img-central" src="./ChatGPT Image 27 de set. de 2026, 22_49_17.png" alt="Foto de perfil de Pedro Lima, desenvolvedor Front-End">
+          <figcaption>Pedro Lima - Desenvolvedor Front-End</figcaption>
+        </figure>
+      </div>
+      <button type="button" onclick="mostrarform()">Enviar email</button>
+    </section>
+
+   
+    <section id="contato-form">
+      <form class="formulario" action="https://formcarry.com/s/i3loHNsGbAO" method="POST" enctype="multipart/form-data">
+        <input type="text" placeholder="Digite seu nome" name="nome" required>
+        <input type="email" placeholder="Digite seu email" name="email" required>
+        <input type="tel" placeholder="Digite seu telefone" name="telefone">
+        <textarea placeholder="Digite sua mensagem" name="mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  
+    <section class="conteudo-sobre" id="sobre">
+      <h2>Olá, eu sou Pedro Lima! 👋</h2>
+      <p>
+        Sou desenvolvedor Front-End, atualmente estudando na plataforma <a href="https://www.devclub.com.br/"
+          target="_blank">DevClub</a> e aprimorando constantemente minhas
+        habilidades em desenvolvimento web.
+
+        Possuo certificados em HTML e CSS Básico, CSS Intermediário e Git e GitHub. Atualmente, estou aprofundando meus
+        conhecimentos em JavaScript, além de outras tecnologias importantes para o desenvolvimento Front-End.
+
+        Também venho participando de alguns freelas e projetos próprios, colocando em prática tudo o que venho aprendendo
+        e construindo meu portfólio para mostrar minha evolução e minhas habilidades.
+
+        Sou uma pessoa focada, dedicada e sempre disposta a aprender. Estou pronto para começar novos projetos e
+        transformar ideias em páginas modernas, funcionais e incríveis.
+
+        Meu objetivo é crescer junto com cada projeto e entregar sempre o meu melhor. E quando surgir algo que eu ainda
+        não saiba fazer, vou atrás do conhecimento necessário para encontrar a melhor solução e buscar um resultado 100%
+        satisfatório.
+
+        Vamos criar algo incrível juntos? 🚀
+      </p>
+      <div class="mapa-redes">
+        <iframe class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.3175463933826!2d-51.07975762540464!3d-29.99903712917052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951975c7cbbe56d1%3A0x48bf6b49a79096ad!2sAv.%20Pres.%20Get%C3%BAlio%20Vargas%2C%202267%20-%20Bela%20Vista%2C%20Alvorada%20-%20RS%2C%2094824-080!5e0!3m2!1spt-BR!2sbr!4v1790571640845!5m2!1spt-BR!2sbr"
+          allowfullscreen loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        
+        <aside class="redes-sociais">
+          <p>🤝 Vamos nos conectar? Acompanhe-me também pelas redes sociais. 📱</p>
+          <div class="redes-sociais-links">
+            <a href="https://github.com/Pedroplr0" target="_blank" aria-label="GitHub"><img src="./GitHub.png"
+                alt="Ícone do GitHub"><span>GitHub</span></a>
+            <a href="https://www.instagram.com/pedroplr001/" target="_blank" aria-label="Instagram"><img
+                src="./instagran.png" alt="Ícone do Instagram"><span>Instagram</span></a>
+            <a href="https://www.linkedin.com/in/pedrolimadarosa/" target="_blank" aria-label="Linkedin"><img
+                src="./linkedin.png" alt="Ícone do LinkedIn"><span>LinkedIn</span></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/5551994011777" target="_blank" rel="noreferrer"
+    aria-label="Abrir WhatsApp">
+    <img src="./whatsapp.png" alt="Logo do WhatsApp" class="logo-whatsapp">
+  </a>
+   
+  <div class="mascara-formulario" onclick="esconderform()"></div>
+  
+  <footer>
+    <p>&copy; 2026 Pedro Lima. Todos os direitos reservados.</p>
+    <p>Desenvolvido com carinho e código!</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

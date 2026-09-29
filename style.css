@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 2;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 1s ease-in-out;
+}
+
+.menu a:hover {
+    color: red;
+}
+
+.student-logo {
+    position: absolute;
+    top: 65px;
+    left: 50px;
+    z-index: 2;
+}
+
+.student-logo img {
+    display: block;
+    width: 50px;
+    height: auto;
+    margin-left: -12px;
+}
+
+.hero-section {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow: hidden;
+}
+
+.fundo-img {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+.fundo-img > .img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.img {
+    opacity: 0.5;
+}
+
+.mascara {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+h1 {
+    position: relative;
+    align-self: center;
+    z-index: 1;
+    margin-top: 24px;
+    color: white;
+    font-size: clamp(30px, 5vw, 60px);
+    text-shadow: 0 2px 15px rgba(23, 245, 15, 0.8);
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin: 0;
+}
+
+.img-central {
+    width: 51%;
+    height: auto;
+}
+
+figcaption {
+    color: white;
+    text-align: center;
+}
+
+button {
+    width: 180px;
+    height: 50px;
+    margin-top: 30px;
+    border: 0;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-section > button {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.formulario {
+    position: fixed;
+    top: 30%;
+    left: -360px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: min(350px, calc(100vw - 32px));
+    padding: 20px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s left ease-in-out;
+}
+
+.formulario input {
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline-color: #18d80f;
+}
+
+.formulario textarea {
+    height: 100px;
+    padding-left: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline-color: #18d80f;
+}
+
+.mascara-formulario {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    transition: 0.5s visibility ease-in-out;
+    cursor: pointer;
+}
+
+.conteudo-sobre {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-align: center;
+    border-radius: 8px;
+}
+
+h2 {
+    position: relative;
+    z-index: 1;
+    margin-top: 24px;
+    color: ghostwhite;
+    font-size: 40px;
+}
+
+p {
+    position: relative;
+    z-index: 1;
+    margin-top: 24px;
+    color: ghostwhite;
+    font-size: 30px;
+}
+
+.mapa-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 71vw;
+    max-width: 900px;
+    min-height: 280px;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 8px;
+}
+
+.redes-sociais > p {
+    align-self: stretch;
+    width: 100%;
+    margin: 0;
+    color: #222;
+    font-size: 20px;
+    text-align: center;
+}
+
+.redes-sociais-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.redes-sociais-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.redes-sociais img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+.maps {
+    flex: none;
+    width: 100%;
+    max-width: 800px;
+    height: 511px;
+    margin: 0;
+    border: 0;
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    width: 61px;
+    cursor: pointer;
+}
+
+.logo-whatsapp {
+    width: 60px;
+}
+
+footer {
+    padding: 16px 24px;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+}
+
+footer p {
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+    .conteudo-sobre {
+        padding: 28px;
+    }
+
+    .redes-sociais {
+        padding: 20px;
+    }
+
+    .maps {
+        height: 380px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .conteudo-sobre > p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu {
+        padding: 8px;
+    }
+
+    .menu a {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+
+    h1 {
+        max-width: calc(100vw - 32px);
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero-content {
+        transform: translateY(32px);
+    }
+
+    .img-central {
+        width: 85%;
+    }
+
+    .hero-section > button {
+        top: 64px;
+        right: 12px;
+        width: 160px;
+        height: 44px;
+        font-size: 12px;
+    }
+
+    .conteudo-sobre {
+        padding: 20px 16px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .conteudo-sobre > p {
+        font-size: 18px;
+    }
+
+    .redes-sociais {
+        width: 90vw;
+        padding: 16px;
+    }
+
+    .redes-sociais-links {
+        gap: 8px;
+        width: 100%;
+    }
+
+    .redes-sociais img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .redes-sociais-links a {
+        font-size: 12px;
+    }
+
+    .maps {
+        height: 300px;
+    }
+
+    .whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        width: 52px;
+    }
+
+    .logo-whatsapp {
+        width: 52px;
+    }
+}
